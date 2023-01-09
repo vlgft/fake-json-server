@@ -1,52 +1,19 @@
 {
-    "list-all-rules":[
+	"posts": [
 		{
-		  "id": 1,
-		  "rule": "Detect outbound connections to common miner pool",
-		  "desc": "Miners typically connect to miner pools on common ports.",
-		  "condition": "net_miner_pool and not trusted_images_query_miner_domain_dns",
-		  "enabled": true,
-		  "source": "vlg7t",
-		  "output": "Outbound connection to IP",
-		  "priority": "MEDIUM",
-		  "tags": [
-			"network",
-			"mitre_execution"
-		  ]
-		},
-		{
-		  "id": 2,
-		  "rule": "Detect CVE Log4j",
-		  "desc": "CVE Log4j Detect.",
-		  "condition": "net_miner_pool and not trusted_images_query_miner_domain_dns",
-		  "enabled": true,
-		  "source": "vlg7t",
-		  "output": "CVE Log4j Detect ",
-		  "priority": "CRITICAL",
-		  "tags": ["CVE"]
+			"id": 1,
+			"title": "json-server",
+			"author": "typicode"
 		}
 	],
-    "rule":[
+	"comments": [
 		{
-		  "id": 2,
-		  "rule": "Detect CVE Log4j",
-		  "desc": "CVE Log4j Detect.",
-		  "condition": "net_miner_pool and not trusted_images_query_miner_domain_dns",
-		  "enabled": true,
-		  "source": "vlg7t",
-		  "output": "CVE Log4j Detect",
-		  "priority": "CRITICAL",
-		  "tags": ["CVE"]
+			"id": 1,
+			"body": "some comment",
+			"postId": 1
 		}
 	],
-	"list-agent": [
-		"10.1.62.72",
-		"10.1.62.72",
-		"10.1.62.72"
-	],
-"profile": {"id":1, "name": "test-admin", "email":"admin@email.com","age": 12,"password":"bruno"},
-	"logs": [
-	{"email": "admin@email.com",
-	"desc": "09-01-2023 10:01:02.23 deleted user bruno"}
-	]
+	"profile": {
+		"name": "typicode"
+	}
 }
