@@ -1,0 +1,33 @@
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "npm run generate-data && node server.js",
+        "generate-data": "node generate-data.js",
+        "dev": "nodemon server.js"
+    },
+    "description": "# Install json-server > npm install -g json-server",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "casual": "^1.6.2",
+        "json-server": "^0.17.3",
+        "jsonwebtoken": "^9.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vlgft/fake-json-server.git"
+    },
+    "keywords": [
+        "json-server"
+    ],
+    "author": "vlg7t",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vlgft/fake-json-server/issues"
+    },
+    "homepage": "https://github.com/vlgft/fake-json-server#readme"
+}
