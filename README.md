@@ -8,23 +8,15 @@ set package name, version, entry point,...
 
 > create file db.json
 
+## Install
+
+Install json-server, auth and query string
+
+> npm install -D json-server json-server-auth query-string
+
 install nodemon for dev enviroment
 
 > npm i --save-dev nodemon
-
-## Install
-
-Install json-server
-
-> npm install -g json-server
-
-Install jsonwebtoken
-
-> npm install jsonwebtoken --save
-
-Install body-parser
-
-> npm i --save body-parser
 
 ## Config
 
@@ -52,4 +44,10 @@ database
 
 ### Usage
 
+Start
+
 > npm start
+
+test auth
+
+> curl --location 'localhost:3000/register' --header 'Content-Type: application/json' --data-raw '{"email": "nilson@email.com","password":"nilson"}'

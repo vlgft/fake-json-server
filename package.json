@@ -15,7 +15,9 @@
         "jsonwebtoken": "^9.0.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.22"
+        "json-server-auth": "^2.1.0",
+        "nodemon": "^2.0.22",
+        "query-string": "^8.1.0"
     },
     "repository": {
         "type": "git",

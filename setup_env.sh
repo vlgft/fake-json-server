@@ -1,9 +1,6 @@
 #!/bin/bash
 
-if [[ npm install -g json-server ]] 
-then
-    npm i json-server --save
-fi 
+npm i json-server --save
 npm install jsonwebtoken --save
 npm i body-parser --save
 
